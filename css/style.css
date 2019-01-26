@@ -1,0 +1,357 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*Header*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 24px; /* Расстояние между строками*/
+}
+
+body {
+    font-family: "PT sans narrow", sans-serif;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;            
+    background-position: top;
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+} 
+
+h2 {
+    font-size: 30px;
+}
+
+.main-header {
+    background-color: black;
+    height: 72px;
+    width: 100%;
+    display: flex; /*Основной обёртке задаём flex чтобы выровнять содержимое, то бишь два ul  с навигациями по центру.*/
+    justify-content: center; /* Выравнивает элемент по центру горизонтали */
+    align-items: center; /* Выравнивает элемент по центру вертикали */
+}
+
+.main-navigation {
+    display: flex; /* Flex для того, чтобы два ul стояли друг за другом*/
+    width: 960px;
+    justify-content: space-between; /* Так как один ul расположен слева а другой справа задаем род. контейнеру space-between, чтобы элементы оттолкнулись.*/
+}
+
+.main-navigation ul {
+
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    
+}
+
+
+.main-navigation ul li {
+    margin: 0 21px;
+}
+
+.login-link {
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    width: 66px; /* Задаём определенную ширину чтобы увеличить контейнер. Для того чтобы было свободное место для лого*/
+    text-align: center;
+    padding-left: 15px; /* отодвигаем текст влевочтобы создать отступ между ним и лого*/
+    background-position: left center; /* Выравниваем картинку с лого внутри блока*/
+}
+
+/*Header logo*/
+
+.header-logo {
+    height: 295px;
+    width: 371px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+/*  Main. 
+    Section-features */
+
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 85px;
+}
+
+.features-list li {
+    flex-basis: 350px;
+}
+
+.features-list li h2 {
+    height: 100px;
+    background-image: url(../img/features-list-style.png);
+    background-repeat: no-repeat;
+    background-position: center 45px;
+}
+
+/* section-news */
+
+
+.wrapper-section {
+    height: 435px;
+    width: 940px;
+    background: url(../img/separate.png) center no-repeat, /* Перечесляем несколько фоновый изображения для одного блока*/
+    url(../img/pattern-light2.png);
+    margin: 36px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 80px 50px 83px;
+    color: black;
+}
+
+.news li {
+    padding-top: 32px;
+    list-style-type: none;
+}
+
+.news a{
+    margin-top: 25px;
+    display: block;
+    padding-top: 9px;
+}
+
+.news-time {
+    text-transform: lowercase;
+}
+
+
+
+/*Section-gallery*/
+
+.gallery h2 {  
+  margin-bottom: 33px;
+}
+
+.gallery img {
+    border: 7px solid white;
+    margin-bottom: 37px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+/*section-contacts*/
+
+.contacts-address {
+    margin: 36px 0 35px 0;
+    display: block;
+    font-style: normal;
+}
+
+.contacts-address a {
+    color:black;
+}
+
+.contacts-time {
+    margin-bottom: 30px;
+}
+
+/*Form-appointment*/
+
+.appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.form-item label {
+    margin: 12px 9px 9px 9px;
+    display: inline-block;
+    
+    
+}
+
+.form-item input {
+    border: 2px solid black;
+    width: 136px;
+    height: 39px;
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+
+.form-item{
+    flex-basis: 140px;
+}
+
+.appointment {
+    width: 300px;
+}
+
+.appointment-form button{
+    margin-top: 20px;
+    width: 300px;
+}
+
+.appointment h2 {
+    margin-bottom: 28px;
+}
+
+/*Site-footer*/
+
+.site-footer {
+    height: 193px;
+    background-image: url(../img/pattern-dark.png);
+    margin-top: 65px;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer-address{
+    font-style: normal;
+    padding-top: 58px;
+
+}
+
+.address-link {
+    text-decoration: underline;
+}
+
+.social-icon {
+    height: 43px;
+    width: 43px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-vkontakte{
+    background-image: url(../img/vk.png);
+}
+
+.social-facebook {
+    background-image: url(../img/facebook.png);
+}
+
+.social-instagram {
+    background-image: url(../img/instagram.png);
+}
+
+.footer-social {
+    text-align: center;
+    padding-top: 58px;
+    margin-left: -195px;
+}
+
+.social-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-list li {
+    margin: 15px 6px 0 6px;
+}
+
+.footer-credits {
+    padding-top: 58px; 
+    text-align: center;
+}
+
+.footer-credits a {
+    padding-top: 8px;
+}
+
+.footer-credits p{
+    margin-bottom: 15px;
+}
+
+/*Buttons global style*/
+.button {
+    height: 44px;
+    width: 140px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    border: none;
+}
+
+@media (max-width: 680px) {
+
+    .main-header {
+        display: block;
+        height: auto;
+        
+    }
+    .main-navigation {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+    .main-navigation ul {
+        display: block;
+        margin: 0 auto;
+        width:300px;
+        text-align: center;
+    }
+    .login-link {
+        margin: 0 auto;
+        width: auto;
+        padding:0;
+        background-position: 90px center;
+    }
+
+    .features-list {
+        display: block;
+    }
+
+    .wrapper-section {
+        display: block;
+        width: auto;
+        height: 838px;
+        background-image: url(../img/pattern-light2.png);
+        background-repeat: repeat;
+    }
+
+    .footer-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer-address {
+        width: 300px
+    }
+
+    .footer-social {
+        width: 300px
+    }
+
+    .footer-credits {
+        width: 300px
+    }
+
+    .site-footer {
+        width: auto;
+        height: auto;
+    }
+
+    }
