@@ -295,34 +295,27 @@ h2 {
     border: none;
 }
 
-@media (max-width: 680px) {
+/*Media*/
 
-    .main-header {
-        display: block;
-        height: auto;
-        
+@media (max-width: 950px) {
+    .wrapper-section {
+        max-width: 800px;
+        padding: 53px 50px 50px 53px;
     }
-    .main-navigation {
-        display: block;
-        margin: 0 auto;
-        width: 300px;
-        text-align: center;
-    }
-    .main-navigation ul {
-        display: block;
-        margin: 0 auto;
-        width:300px;
-        text-align: center;
-    }
-    .login-link {
-        margin: 0 auto;
-        width: auto;
-        padding:0;
-        background-position: 90px center;
-    }
+}
+
+@media (max-width: 854px) {
 
     .features-list {
         display: block;
+    }
+
+    .news {
+        text-align: center;
+    }
+
+    .news a {
+        margin: 0 auto;
     }
 
     .wrapper-section {
@@ -333,25 +326,6 @@ h2 {
         background-repeat: repeat;
     }
 
-    .footer-wrapper {
-        flex-wrap: wrap;
-    }
-
-    .footer-address {
-        width: 300px
-    }
-
-    .footer-social {
-        width: 300px
-    }
-
-    .footer-credits {
-        width: 300px
-    }
-
-    .site-footer {
-        width: auto;
-        height: auto;
-    }
+    
 
     }
